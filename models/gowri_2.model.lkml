@@ -214,9 +214,10 @@ explore: sindhu {
   join: users {
     type: left_outer
     sql_on: ${sindhu.user_id} = ${users.id} ;;
-    relationship: many_to_one
+    relationship: many_to_many
   }
 }
+
 
 explore: special_charaters {}
 
