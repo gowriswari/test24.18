@@ -184,7 +184,12 @@ explore: persons {}
 
 explore: persons2 {}
 
-explore: products {}
+explore: products {
+  access_filter: {
+    field: products.brand
+    user_attribute: products
+  }
+}
 
 explore: salary {
   join: dept {
